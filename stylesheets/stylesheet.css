@@ -5,6 +5,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height:100%;
 }
 
 h1 {
@@ -12,47 +14,27 @@ h1 {
     text-align: center;
 }
 
-#font {
-    color: rgba(11,23,44,0.5);
-    padding: 130px 500px 50px 20px;
-    text-align: right;
 
-    font-family: 'Tangerine', serif;
-    font-size: 40px;
-    text-shadow: 4px 4px 4px #aaa;
-    line-height: 40px;
-  
-  color: #ecf0f1;
-  height: 160px;
-    overflow: hiden
-    
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-}
 
 /*text animation*/
 .content {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 60%;
   transform: translate(-50%, -50%);
   font-size: 35px;
   line-height: 40px;
   font-family: 'Tangerine', serif;
-  color: #ecf0f1;
+  color: lightblue;
   height: 160px;
   overflow:hidden;
   -webkit-animation-name: fshow; /* Chrome, Safari, Opera */
   -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
-  -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: 100; /* Chrome, Safari, Opera */
   -webkit-animation-timing-function: linear;
   animation-name: fshow;
   animation-duration: 10s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 100;
   animation-timing-function: linear;
 
 }
@@ -116,7 +98,7 @@ ul li {
   34%,46%  {transform:translateY(-50%);}
   51%,63%  {transform:translateY(-75%);}
   68%,80%  {transform:translateY(-50%);}
-  85%,97%  {transform:translateY(-25%);}
+  85%,100%  {transform:translateY(-25%);}
 }
 
 #footnote{
@@ -134,10 +116,10 @@ ul li {
 }
 .area{
   text-align: left;
-  font-size:95px;
+  font-size:85px;
   color:#fff;
   letter-spacing: -7px;
-  font-weight:700;
+  font-weight:500;
   text-transform:uppercase;
   animation:blur .75s ease-out infinite;
   text-shadow:0px 0px 5px #fff,
@@ -223,13 +205,15 @@ ul li {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fshow {
     0%   {color:red; left:75%; top:40%;}
-    100% {color:blue; left:60%; top:40%;}
+    50%  {color:yellow ;left:55%; top: 40%;}
+    100% {color:blue; left:75%; top:40%;}
 }
 
 /* Standard syntax */
 @keyframes fshow {
     0%   {color:red; left:75%; top:40%;}
-    100% {color:blue; left:60%; top:40%;}
+    50%  {color:yellow ;left:55%; top: 40%;}
+    100% {color:blue; left:75%; top:40%;}
   }
 
   /* Chrome, Safari, Opera */
